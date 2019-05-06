@@ -1,3 +1,13 @@
-.card {
-    
+#header {
+    background: #1abc9c;
+    box-shadow: 4em;
+    /* height: 35px; */
 }
+body {
+    margin-top: 75px;
+}
+
+#contrib-panel {
+    height: 120px;
+}
+
