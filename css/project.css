@@ -1,7 +1,7 @@
 #header {
     background: #1abc9c;
     box-shadow: 4em;
-    /* height: 35px; */
+    
 }
 body {
     margin-top: 75px;
@@ -11,3 +11,6 @@ body {
     height: 120px;
 }
 
+h2 {
+    color: white;
+}

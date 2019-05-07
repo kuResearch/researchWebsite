@@ -1,41 +1,64 @@
-{% extends "base.html" %}
-
-{% block content %}
 
 <html>
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/project.css"
+
+        <meta charset="utf-8">
+        <title>Geological Research</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Favicons -->
+        <link href="img/favicon.png" rel="icon">
+        <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+        <!-- Bootstrap CSS File -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Libraries CSS Files -->
+        <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+        <!-- Main Stylesheet File -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/project.css" rel="stylesheet">
     </head>
 
     <body id="page-top">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-            <div class="container">
-            <a class="navbar-brand" href="#">University of Kansas </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/home">Home
-                    <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/project">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
-                </li>
+      <header id="header">
+        <div id="header-container" class="container">
+    
+          <div id="logo" class="pull-left">
+            <!-- <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a> -->
+            <!-- Uncomment below if you prefer to use a text logo -->
+            <h1><a href="#hero">Regna</a></h1>
+          </div>
+    
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li class="menu-active"><a href="#hero">Home</a></li>
+              <!-- <li><a href="#about">About Us</a></li> -->
+              <li class="menu-has-children"><a href="">Projects</a>
+                <ul>
+                  <li id="nav-item"><a href="#">Project 1</a></li>
+                  <li id="nav-item"><a href="#">Project 2</a></li>
+                  <li id="nav-item"><a href="#">Project 3</a></li>
                 </ul>
-            </div>
-            </div>
-        </nav>
-        
+              </li>
+              <li><a href="#about">Project 2</a></li>
+                <li><a href="#about">Project 3</a></li>
+            </ul>
+            
+          </nav><!-- #nav-menu-container -->
+        </div>
+      </header><!-- #header -->
+
         <!-- Page Wrapper -->
         <div id="wrapper">
       
@@ -53,26 +76,6 @@
               <!-- Topbar -->
               <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
       
-                <!-- Sidebar Toggle (Topbar) -->
-                <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                  <i class="fa fa-bars"></i>
-                </button>
-      
-                <!-- Topbar Search -->
-                <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                  <!-- <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
-                  </div> -->
-
-                  <h3>{{title}}</h3>
-                </form>
-      
-      
               </nav>
               <!-- End of Topbar -->
       
@@ -80,8 +83,6 @@
               <div class="container-fluid">
 
                 <!-- <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Cri" src="//www.arcgis.com/apps/Embed/index.html?webmap=6cce108037834f2d8ea3fc476d182678&extent=-94.9142,28.3867,-87.8225,32.4311&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&details=true&disable_scroll=true&theme=light"></iframe></div> -->
-
-                <!-- <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Cri" src="//www.arcgis.com/apps/Embed/index.html?webmap=6cce108037834f2d8ea3fc476d182678&extent=-94.9142,28.4495,-87.8225,32.4311&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&details=true&legend=true&active_panel=details&disable_scroll=true&theme=light"></iframe></div> -->
       
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
@@ -90,85 +91,6 @@
                 </div>
       
                 <!-- Content Row -->
-                <div class="row">
-      
-                  <!-- Earnings (Monthly) Card Example -->
-                  <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-left-primary shadow h-100 py-2">
-                      <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                          <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Optional</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800"> </div>
-                          </div>
-                          <div class="col-auto">
-                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-      
-                  <!-- Earnings (Monthly) Card Example -->
-                  <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-left-success shadow h-100 py-2">
-                      <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                          <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Optional</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
-                          </div>
-                          <div class="col-auto">
-                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-      
-                  <!-- Earnings (Monthly) Card Example -->
-                  <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-left-info shadow h-100 py-2">
-                      <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                          <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Optional</div>
-                            <div class="row no-gutters align-items-center">
-                              <div class="col-auto">
-                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"></div>
-                              </div>
-                              <div class="col">
-                                <!-- <div class="progress progress-sm mr-2"> -->
-                                  <!-- <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div> -->
-                                <!-- </div> -->
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-auto">
-                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-      
-                  <!-- Pending Requests Card Example -->
-                  <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-left-warning shadow h-100 py-2">
-                      <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                          <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Optional</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
-                          </div>
-                          <div class="col-auto">
-                            <i class="fas fa-comments fa-2x text-gray-300"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
       
                 <!-- Content Row -->
       
@@ -197,7 +119,7 @@
                   
       
                   <!-- Pie Chart -->
-                  <div class="col-xl-4 col-lg-5">
+                  <div id="contrib-panel"class="col-xl-4 col-lg-5">
                     <div class="card shadow mb-4">
                       <!-- Card Header - Dropdown -->
                       <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
@@ -228,10 +150,10 @@
                 <div class="row">
       
                   <!-- Content Column -->
-                  <div class="col-lg-6 mb-4">
+                  <!-- <div class="col-lg-6 mb-4"> -->
       
                     <!-- Project Card Example -->
-                    <div class="card shadow mb-4">
+                    <!-- <div class="card shadow mb-4">
                       <div class="card-header py-3">
                         <h6 class="m-0 font-weight-bold text-primary">Information</h6>
                       </div>
@@ -258,62 +180,9 @@
                         </div>
                       </div>
                     </div>
+                  </div> -->
       
-                    <!-- Color System -->
-                    <!-- <div class="row">
-                      <div class="col-lg-6 mb-4">
-                        <div class="card bg-primary text-white shadow">
-                          <div class="card-body">
-                            Primary
-                            <div class="text-white-50 small">#4e73df</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 mb-4">
-                        <div class="card bg-success text-white shadow">
-                          <div class="card-body">
-                            Success
-                            <div class="text-white-50 small">#1cc88a</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 mb-4">
-                        <div class="card bg-info text-white shadow">
-                          <div class="card-body">
-                            Info
-                            <div class="text-white-50 small">#36b9cc</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 mb-4">
-                        <div class="card bg-warning text-white shadow">
-                          <div class="card-body">
-                            Warning
-                            <div class="text-white-50 small">#f6c23e</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 mb-4">
-                        <div class="card bg-danger text-white shadow">
-                          <div class="card-body">
-                            Danger
-                            <div class="text-white-50 small">#e74a3b</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 mb-4">
-                        <div class="card bg-secondary text-white shadow">
-                          <div class="card-body">
-                            Secondary
-                            <div class="text-white-50 small">#858796</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-       -->
-                  </div>
-      
-                  <div class="col-lg-6 mb-4">
+                  <div class="col-lg-7 mb-4">
       
                     <!-- Illustrations -->
                     <div class="card shadow mb-4">
@@ -322,10 +191,10 @@
                       </div>
                       <div class="card-body">
                         <div class="text-center">
-                          <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Cri" src="//www.arcgis.com/apps/Embed/index.html?webmap=6cce108037834f2d8ea3fc476d182678&extent=-94.9142,28.4495,-87.8225,32.4311&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&details=true&legend=true&active_panel=details&disable_scroll=true&theme=light"></iframe></div>
+
                         </div>
                         <p>This could be where you put the source link to the project, like the link to the svc file. Image on top to get an idea of what they're looking at.</p>
-                        <a target="_blank" rel="nofollow" href="https://undraw.co/">Link to Data &rarr;</a>
+                        <a target="_blank" rel="nofollow" href="https://drive.google.com/uc?export=download&id=1KEErpPJue5N-_uZGv8jkoXzinuroTfvw">Link to Data &rarr;</a>
                       </div>
                     </div>
       
@@ -336,7 +205,6 @@
                       </div>
                       <div class="card-body">
                         <p>Here you could write the research approach to each project, and a description of what the project is showing. There's a lot of redundancy here, but it's modulated to change</p>
-                        <!-- <p class="mb-0">Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.</p> -->
                       </div>
                     </div>
       
@@ -354,6 +222,53 @@
       
         </div>
         <!-- End of Page Wrapper -->
+
+        <!-- Footer-->
+<footer class="footer bg-light fixed-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+              <a href="#">About</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Contact</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2019. All Rights Reserved.</p>
+        </div>
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-facebook fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-instagram fa-2x fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
       
         <!-- Scroll to Top Button-->
         <a class="scroll-to-top rounded" href="#page-top">
@@ -379,5 +294,3 @@
       
       </body>
 </html>
-
-{% endblock content%}
