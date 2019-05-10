@@ -14,3 +14,15 @@ body {
 h2 {
     color: white;
 }
+
+.immigrationText {
+    font-size: 16px;
+}
+
+.evacuationsText {
+    font-size: 16px;
+}
+
+.donationsText {
+    font-size: 16px;
+}
